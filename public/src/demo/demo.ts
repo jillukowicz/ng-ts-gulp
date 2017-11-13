@@ -1,11 +1,14 @@
-/// <reference path="../../../typings/index.d.ts" />
+/// <reference path="../../../node_modules/@types/angular/index.d.ts" />
 
 module app.demo {
 
     'use strict';
 
-    export interface IDemoCtrl {}
+    export interface IDemoCtrl {
+        value: string;
+    }
     export class DemoCtrl implements IDemoCtrl {
+        public value: string;
         constructor(
             public $scope: ng.IScope
         ){}
@@ -22,6 +25,9 @@ module app.demo {
         .module('app.demo', [])
         .directive("demo", function(): ng.IDirective {
             return {
+                bindings:{
+                    value: '='
+                },
                 templateUrl: 'app-templates/demo/demo.html',
                 controller:  DemoCtrl,
                 controllerAs: 'demoCtrlVM'

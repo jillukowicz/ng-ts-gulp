@@ -4,7 +4,7 @@
   "dependencies": {
 	
 	"bootstrap": "*",
-	"angular": "~1.4.8"
+	"angular": "1.5.0"
   },
   "overrides": {
     "bootstrap": {

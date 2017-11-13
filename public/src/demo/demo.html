@@ -3,7 +3,7 @@
 	<h2>Hello directive!</h2>
 
 	<button ng-click="demoCtrlVM.demoService.getExcited = !demoCtrlVM.demoService.getExcited">
-		Go ahead, click me - I'm wired up to ng ready to go!
+		Go ahead, click me - I'm wired up to ng ready to go! - {{demoCtrlVM.value}}
 	</button>
 	<div ng-show="demoCtrlVM.demoService.getExcited">
 		<h3>Yeeehaww!</h3>

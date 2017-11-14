@@ -29,7 +29,7 @@ var app;
             .directive("demo", function () {
             return {
                 bindings: {
-                    value: '='
+                    value: '<'
                 },
                 templateUrl: 'app-templates/demo/demo.html',
                 controller: DemoCtrl,

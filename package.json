@@ -18,7 +18,6 @@
 	],
 	"repository": "",
 	"dependencies": {
-		"@types/angular": "^1.6.39",
 		"express": "^4.13.3"
 	},
 	"devDependencies": {

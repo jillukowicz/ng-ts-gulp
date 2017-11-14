@@ -26,7 +26,7 @@ module app.demo {
         .directive("demo", function(): ng.IDirective {
             return {
                 bindings:{
-                    value: '='
+                    value: '<'
                 },
                 templateUrl: 'app-templates/demo/demo.html',
                 controller:  DemoCtrl,
